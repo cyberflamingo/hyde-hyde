@@ -6,7 +6,7 @@
 	<a href="https://github.com/{{.}}" rel="me"><i class="fa fa-github" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.newspicks }}
-	<a href="https://newspicks.com/user/{{.}}" rel="me"><img class="fa" src="/img/newspicks-logo.svg" alt="NewsPicks Logo" aria-hidden="true"></a>
+	<a href="https://newspicks.com/user/{{.}}" rel="me">{{ partial "sidebar/newspicks_icon.svg" . }}</a>
 	{{ end }}
 	{{ with .Site.Params.social.mastodon }}
 	<a href="https://{{.}}" rel="me"><i class="fa fa-mastodon" aria-hidden="true"></i></a>

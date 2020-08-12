@@ -62,7 +62,21 @@ img {
     &:hover,
     &:focus {
       background-color: $pink;
-      // fill: $pink;
+    }
+  }
+}
+
+svg {
+  display: inline-block;
+  margin: 0;
+  border-radius: 0;
+  max-width: 1.33333333em;
+  height: 19px;
+
+  &:hover {
+    // NewsPicks Icon
+    .cls-2, .cls-3 {
+      fill: $pink;
     }
   }
 }
