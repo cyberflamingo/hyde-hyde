@@ -73,16 +73,17 @@ svg {
   max-width: 1.33333333em;
   height: 19px;
 
-  &:hover {
-    // NewsPicks Icon
-    .cls-2, .cls-3 {
-      fill: $pink;
-    }
+  &#newspicks_icon,
+  &#wantedly_mark {
+    fill: $gray-1;
 
-    // Wantedly
-    .st0 {
+    &:hover {
       fill: $pink;
     }
+  }
+
+  &#newspicks_icon {
+    fill-rule: evenodd;
   }
 }
 
