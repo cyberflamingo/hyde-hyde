@@ -32,8 +32,16 @@
 	{{ with .Site.Params.social.orcid }}
 	<a href="https://orcid.org/{{.}}" rel="me" title="Orcid Profile"><i class="fab fa-orcid fa-lg" aria-hidden="true"></i></a>
 	{{end}}
-	<a href="/index.xml" rel="me" title="RSS Feed"><i class="fa fa-rss" aria-hidden="true"></i></a>
 	{{ with .Site.Params.social.email }}
 	<a href="mailto:{{.}}" rel="me" class="u-email"><i class="fa fa-at" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.pgpkey }}
+	<a href="{{.}}" rel="pgpkey"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.reddit }}
+	<a href="https://www.reddit.com/user/{{.}}" rel="me"><i class="fab fa-reddit-alien fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.rss }}
+	<a href="{{.}}" rel="me" title="RSS Feed"><i class="fa fa-rss" aria-hidden="true"></i></a>
 	{{ end }}
 </section>
