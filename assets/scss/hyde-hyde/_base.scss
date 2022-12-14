@@ -105,6 +105,10 @@ blockquote {
 			display: block;
 			text-align: center;
 		}
+
+		~ p {
+			display: none;
+		}
 	}
 
 	&.twitter-tweet {

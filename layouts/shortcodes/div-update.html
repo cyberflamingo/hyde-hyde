@@ -1,0 +1,6 @@
+<div class="update">
+    <time class="dt-updated" datetime="{{ .Get "datetime" }}">
+        {{ .Get "datetime" | time.Format ":date_long" }}
+    </time>
+    {{ .Inner | markdownify }}
+</div>
