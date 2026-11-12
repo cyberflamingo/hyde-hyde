@@ -10,6 +10,7 @@
 @import 'hyde-hyde/list';
 @import 'hyde-hyde/post';
 @import 'hyde-hyde/code';
+@import 'hyde-hyde/chroma';
 @import 'hyde-hyde/gist';
 @import 'hyde-hyde/navigation';
 @import 'hyde-hyde/taxonomies';
@@ -17,3 +18,5 @@
 @import 'hyde-hyde/responsive';
 @import 'hyde-hyde/misc';
 @import 'hyde-hyde/theme';
+// Last, so equal-specificity rules win as they did when this was an inline <style> block.
+@import 'hyde-hyde/embeds';

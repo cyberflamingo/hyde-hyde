@@ -1,5 +1,6 @@
 
-{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+{{/* The SCSS still uses @import (removed in Dart Sass 3.0); the toolchain is pinned, so silence it. */}}
+{{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" true "silenceDeprecations" (slice "import")) }}
 
 {{ $style := resources.Get "scss/hyde-hyde.scss" | toCSS $options | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
