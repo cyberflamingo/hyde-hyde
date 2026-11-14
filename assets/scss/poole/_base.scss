@@ -50,6 +50,9 @@ a {
 img {
   display: block;
   max-width: 100%;
+  // Images carry width/height attributes (so the browser can reserve their space before
+  // loading); without this a narrow screen would squash them instead of scaling them.
+  height: auto;
   margin: 0 0 1rem;
   border-radius: 5px;
 
@@ -84,6 +87,12 @@ svg {
 
   &#newspicks_icon {
     fill-rule: evenodd;
+  }
+
+  // Inline icons (layouts/partials/icons/), which replaced the Fork Awesome font.
+  &.icon {
+    fill: currentColor;
+    vertical-align: -0.125em;
   }
 }
 

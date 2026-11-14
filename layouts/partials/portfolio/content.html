@@ -9,9 +9,9 @@
                             <a href="{{ .Params.Link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
                         </span>
                         <p class="project__subtitle-big">
-                            <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                            <sup>{{ partial "icons/quote-left.svg" . }}</sup>
                             {{ .Params.description }}
-                            <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                            <sup>{{ partial "icons/quote-right.svg" . }}</sup>
                         </p>
                         <div class="project__featured-image">
                             {{ if .Params.screenshot }}
@@ -42,9 +42,9 @@
                         <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
                     </span>
                     <span class="project__subtitle-small">
-                        <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                        <sup>{{ partial "icons/quote-left.svg" . }}</sup>
                         {{ .Params.description }}
-                        <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
+                        <sup>{{ partial "icons/quote-right.svg" . }}</sup>
                     </span>
                     <span class="project__summary">
                         {{ .Content }}

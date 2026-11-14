@@ -19,7 +19,7 @@ ul.pagination {
   margin: 0 auto;
   margin-top: 60px;
   a {
-    font-size: 0.8rem;
+    height: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,12 +39,12 @@ ul.pagination {
       width: 100%;
     }
   }
-  .fa {
-    font-size: 0.8rem;
+  .icon {
+    height: 0.8rem;
   }
   .navigation-prev {
     text-align: left;
-    .fa {
+    .icon {
       padding-right: 10px;
     }
     .navigation-tittle {
@@ -53,7 +53,7 @@ ul.pagination {
   }
   .navigation-next {
     text-align: right;
-    .fa {
+    .icon {
       padding-left: 10px;
     }
     .navigation-tittle {

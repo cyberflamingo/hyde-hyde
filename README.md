@@ -197,6 +197,8 @@ For example, for the [exampleSite](https://github.com/htr3n/hyde-hyde/tree/maste
 
 * Hugo's `hyde` ported by [Steve Francia](https://github.com/spf13)
 
+* The inline icons in `layouts/partials/icons/` are glyph outlines from [Fork Awesome](https://forkawesome.github.io) (SIL OFL 1.1), which replaced loading the icon font
+
 ## License
 
 Open sourced under the [MIT license](LICENSE.md)
