@@ -19,7 +19,7 @@ ul.pagination {
   margin: 0 auto;
   margin-top: 60px;
   a {
-    height: 0.8rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,12 @@ ul.pagination {
     }
   }
   .icon {
-    height: 0.8rem;
+    // A flex item next to a long, wrapping title: don't let it be squeezed, don't let the
+    // global svg max-width clip it, and keep the padding below outside the drawn chevron.
+    flex: none;
+    box-sizing: content-box;
+    max-width: none;
+    height: 1rem;
   }
   .navigation-prev {
     text-align: left;
